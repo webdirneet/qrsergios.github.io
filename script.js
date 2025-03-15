@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 splash.style.display = 'none';
             }, 500);
-        }, 2000);
+        }, 5000);
     }
 
     // Hamburger Menu
