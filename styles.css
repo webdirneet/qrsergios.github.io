@@ -128,4 +128,91 @@ h1 {
     .menu-grid {
         grid-template-columns: 1fr;
     }
+/* Logo */
+.logo {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Presentación */
+.presentation {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.presentation h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.presentation p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Ofertas */
+.offers {
+    margin-bottom: 3rem;
+}
+
+.offers h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.offer-item {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.offer-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.offer-item .price {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design para Ofertas */
+@media (max-width: 768px) {
+    .offers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
 }
